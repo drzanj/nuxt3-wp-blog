@@ -18,9 +18,16 @@ if (process.browser) {
   require('aframe')
 }
 export default {
- location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
 }
-
+redirect ();
+     function redirect () {
+     myURL();
+         setTimeout(myURL, 10);
+      }
+      function myURL() {
+        location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
+        
+      }
 let url = ("https://www.sportschampic.com/"+ `${params.slug}`)
 // let name = "Nathan JS"
   //  window.alert(url);
