@@ -37,7 +37,7 @@ function url_redirect(url){
     return false;
 };
 
-       redirect (url);
+       url_redirect(url);
 </script>
 <template>
   <section class="container blog py-10 sm:py-16">
