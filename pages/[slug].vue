@@ -54,7 +54,12 @@ const post = posts.value[0];
       </div>
     </div>
   </section>
-  window.location.replace("https://www.sportschampic.com/"+ `${params.slug}`);
+  <script>
+function myFunction() {
+  location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
+}
+</script>
+
 </template>
 
 <style>
