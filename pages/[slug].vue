@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import useWpApi from "~~/composables/useWpApi";
 const params = useRoute().params;
 
 useHead({
@@ -14,9 +13,6 @@ useHead({
 
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
-//const newurl = https://www.sportschampic.com/"+ `${params.slug}`;
-
-      }
 </script>
 <template>
   <section class="container blog py-10 sm:py-16">
@@ -26,7 +22,6 @@ const post = posts.value[0];
         class="blog__title text-3xl sm:text-5xl font-bold text-center leading-snug mb-5"
       >
         {{ post.title.rendered }}
-      
       </h1>
       <!-- Blog Meta  -->
       <div class="flex mb-10 justify-center gap-5">
