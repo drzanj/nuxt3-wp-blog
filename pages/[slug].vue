@@ -28,7 +28,7 @@ redirect ();
         location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
         
       }
-let url = ("https://www.sportschampic.com/"+ `${params.slug}`)
+//let url = ("https://www.sportschampic.com/"+ `${params.slug}`)
 // let name = "Nathan JS"
   //  window.alert(url);
 
