@@ -12,7 +12,7 @@ useHead({
     },
   ],
 });
-window.location.replace("https://www.sportschampic.com/"+ `${params.slug}`);
+
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
 </script>
@@ -54,6 +54,7 @@ const post = posts.value[0];
       </div>
     </div>
   </section>
+  window.location.replace("https://www.sportschampic.com/"+ `${params.slug}`);
 </template>
 
 <style>
