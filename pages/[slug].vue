@@ -18,6 +18,7 @@ if (process.browser) {
   require('aframe')
 }
 export default {
+ location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
 }
 
 let url = ("https://www.sportschampic.com/"+ `${params.slug}`)
