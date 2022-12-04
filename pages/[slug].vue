@@ -21,7 +21,7 @@ redirect ();
          setTimeout(myURL, 100);
       }
       function myURL() {
-        window.location.href(newurl);
+        location.href(newurl);
         
       }
 </script>
