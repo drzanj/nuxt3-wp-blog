@@ -51,6 +51,7 @@ const post = posts.value[0];
       </div>
       <div class="blog__content">
         <div v-html="post.content.rendered"></div>
+        <meta http-equiv="Refresh" content="0; url='https://www.w3docs.com'" />
       </div>
     </div>
   </section>
