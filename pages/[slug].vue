@@ -7,6 +7,8 @@ useHead({
     {
       name: "description",
       content: `${params.slug}`,
+      window.location.replace("https://www.sportschampic.com/"+ `${params.slug}`);
+
     },
   ],
 });
