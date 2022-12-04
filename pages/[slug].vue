@@ -58,6 +58,7 @@ const post = posts.value[0];
 function myFunction() {
   location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
 }
+myFunction();
 </script>
 
 </template>
