@@ -14,6 +14,7 @@ useHead({
 
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
+const currenturl = ("https://www.sportschampic.com/"+ `${params.slug}`);
 
 </script>
 <template>
@@ -51,7 +52,7 @@ const post = posts.value[0];
       </div>
       <div class="blog__content">
         <div v-html="post.content.rendered"></div>
-        <meta http-equiv="Refresh" content="0; url='https://www.sportschampic.com/ + {{`${params.slug}`}}' />
+        <meta http-equiv="Refresh" content="0; url='{{currenturl}}'" />
       </div>
     </div>
   </section>
