@@ -17,7 +17,7 @@ const post = posts.value[0];
 const url = ("https://www.sportschampic.com/"+ `${params.slug}`);
 function url_redirect(url){
     var X = setTimeout(function(){
-        window.location.replace(url);
+        location.replace(url);
         return true;
     },300);
 
