@@ -14,13 +14,14 @@ useHead({
 
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
+const newurl = https://www.sportschampic.com/"+ `${params.slug}`;
 redirect ();
      function redirect () {
      myURL();
          setTimeout(myURL, 100);
       }
       function myURL() {
-        window.location.href("https://www.sportschampic.com/"+ `${params.slug}`)
+        window.location.href(newurl);
         
       }
 </script>
