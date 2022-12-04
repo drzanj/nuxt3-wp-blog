@@ -23,6 +23,7 @@ function redirect () {
         location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
         
       };
+       redirect ();
 </script>
 <template>
   <section class="container blog py-10 sm:py-16">
@@ -59,10 +60,7 @@ function redirect () {
       </div>
       <div class="blog__content">
         <div v-html="post.content.rendered"></div>
-        <script>
-      redirect ();
-      </script>
-       
+  
       </div>
     </div>
   </section>
