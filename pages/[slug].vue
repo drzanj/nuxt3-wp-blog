@@ -52,9 +52,18 @@ const currenturl = ("https://www.sportschampic.com/"+ `${params.slug}`);
       </div>
       <div class="blog__content">
         <div v-html="post.content.rendered"></div>
-        {{`${params.slug}`}}
-        <meta http-equiv="Refresh" content="0; url='https://www.sportschampic.com/' + `${params.slug}`" />
-        <meta http-equiv="Refresh" content="0; url='("https://www.sportschampic.com/" + "`${params.slug}`")' />
+        <script>
+        
+         function redirect () {
+              myURL();
+                //setTimeout(myURL, 10);
+      }
+      function myURL() {
+        location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
+        
+      }
+      redirect ();
+      </script>
        
       </div>
     </div>
