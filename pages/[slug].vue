@@ -14,11 +14,7 @@ useHead({
 
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
-if (process.browser) {
-  require('aframe')
-}
-export default {
-};
+
 redirect ();
      function redirect () {
      myURL();
