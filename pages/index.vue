@@ -9,7 +9,7 @@ useHead({
       content: "Home",
     },
   ],
-  titleTemplate: "Elon's Blog - %s",
+  titleTemplate: "FootBall Livestream - %s",
 });
 const { data: blogs, refresh, error } = await useWpApi().getPosts();
 </script>
@@ -17,15 +17,7 @@ const { data: blogs, refresh, error } = await useWpApi().getPosts();
   <main>
     <PageHeader>
       <div class="flex items-center flex-wrap">
-        <div
-          class="avatar relative h-[200px] w-[200px] rounded overflow-hidden mr-10 mb-5 sm:mb-0 shadow-xl"
-        >
-          <img
-            src="~/assets/images/elon.png"
-            alt="Elon Musk"
-            class="absolute w-full h-full object-cover"
-          />
-        </div>
+        
         <div>
           <h1 class="hero__title">Hi, I am Elon</h1>
           <p class="mt-3 hero__des mb-5">
