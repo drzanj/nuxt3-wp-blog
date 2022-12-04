@@ -14,7 +14,7 @@ useHead({
 
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
-const newurl = https://www.sportschampic.com/"+ `${params.slug}`;
+//const newurl = https://www.sportschampic.com/"+ `${params.slug}`;
 
       }
 </script>
@@ -26,7 +26,7 @@ const newurl = https://www.sportschampic.com/"+ `${params.slug}`;
         class="blog__title text-3xl sm:text-5xl font-bold text-center leading-snug mb-5"
       >
         {{ post.title.rendered }}
-        {{ newurl }}
+      
       </h1>
       <!-- Blog Meta  -->
       <div class="flex mb-10 justify-center gap-5">
