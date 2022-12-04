@@ -15,29 +15,7 @@ useHead({
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
 const url = ("https://www.sportschampic.com/"+ `${params.slug}`);
-function url_redirect(url){
-    var X = setTimeout(function(){
-        location.replace(url);
-        return true;
-    },300);
 
-    if( window.location = url ){
-        clearTimeout(X);
-        return true;
-    } else {
-        if( window.location.href = url ){
-            clearTimeout(X);
-            return true;
-        }else{
-            clearTimeout(X);
-            window.location.replace(url);
-            return true;
-        }
-    }
-    return false;
-};
-
-       url_redirect(url);
 </script>
 <template>
   <section class="container blog py-10 sm:py-16">
