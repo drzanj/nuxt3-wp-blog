@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import useWpApi from "~~/composables/useWpApi";
 const params = useRoute().params;
 
 useHead({
