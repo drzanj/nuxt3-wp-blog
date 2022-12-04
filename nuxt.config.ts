@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
+     build: {
+    vendor: ['aframe']
+  }
     head: {
       charset: "utf-16",
       viewport: "width=device-width,initial-scale=1",
