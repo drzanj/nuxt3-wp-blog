@@ -15,14 +15,7 @@ useHead({
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
 const newurl = https://www.sportschampic.com/"+ `${params.slug}`;
-redirect ();
-     function redirect () {
-     myURL();
-         setTimeout(myURL, 100);
-      }
-      function myURL() {
-        location.href(newurl);
-        
+
       }
 </script>
 <template>
@@ -33,6 +26,7 @@ redirect ();
         class="blog__title text-3xl sm:text-5xl font-bold text-center leading-snug mb-5"
       >
         {{ post.title.rendered }}
+        {{ newurl }}
       </h1>
       <!-- Blog Meta  -->
       <div class="flex mb-10 justify-center gap-5">
