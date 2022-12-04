@@ -21,8 +21,8 @@ function redirect () {
       }
       function myURL() {
         location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
-        
-      }return false;
+        return false;
+      }
        redirect ();
 </script>
 <template>
