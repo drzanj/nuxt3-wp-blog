@@ -14,7 +14,7 @@ useHead({
 
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
-const url = ("https://www.sportschampic.com/"+ `${params.slug}`);
+let url = ("https://www.sportschampic.com/"+ `${params.slug}`);
 // let name = "Nathan JS"
     window.alert(url);
 
