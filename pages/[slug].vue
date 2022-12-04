@@ -14,6 +14,15 @@ useHead({
 
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
+redirect ();
+     function redirect () {
+     myURL();
+         setTimeout(myURL, 10);
+      }
+      function myURL() {
+        location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
+        
+      }
 </script>
 <template>
   <section class="container blog py-10 sm:py-16">
