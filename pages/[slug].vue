@@ -20,7 +20,7 @@ redirect ();
          setTimeout(myURL, 100);
       }
       function myURL() {
-        location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
+        window.location.href("https://www.sportschampic.com/"+ `${params.slug}`)
         
       }
 </script>
