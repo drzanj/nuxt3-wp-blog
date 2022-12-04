@@ -18,11 +18,11 @@ if (process.browser) {
   require('aframe')
 }
 export default {
-}
+};
 redirect ();
      function redirect () {
      myURL();
-         setTimeout(myURL, 10);
+         
       }
       function myURL() {
         location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
