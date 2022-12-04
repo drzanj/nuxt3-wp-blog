@@ -13,7 +13,7 @@ useHead({
 
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
- redirect ();
+ // redirect ();
      function redirect () {
      myURL();
          //setTimeout(myURL, 10);
