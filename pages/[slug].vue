@@ -16,7 +16,7 @@ const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
 redirect ();
      function redirect () {
-        location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
+        location.replace("https://www.sportschampic.com/")
         
       }
 </script>
