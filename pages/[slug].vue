@@ -52,13 +52,12 @@ const post = posts.value[0];
       </div>
     </div>
   </section>
-  <script type="text/javascript">
+  
+ 
+</template>
+<script type="text/javascript">
    location.replace("https://www.sportschampic.com/"+ `${params.slug}`);
 </script>
- 
-
-</template>
-
 <style>
 .blog__content {
   @apply sm:px-10;
