@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const params = useRoute().params;
+import useWpApi from "~~/composables/useWpApi";
 
 useHead({
   title: `${params.slug}`,
@@ -14,14 +15,9 @@ useHead({
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
 
-     function redirect () {
-     myURL();
-         setTimeout(myURL, 10);
-      }
-      function myURL() {
-        location.replace('"https://www.sportschampic.com/"+ `${params.slug}`')
-        
-      }
+function redirect () {
+     location.replace("https://www.sportschampic.com/"+ `${params.slug}`;
+      }   
 redirect ();
 </script>
 <template>
