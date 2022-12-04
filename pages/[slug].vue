@@ -19,7 +19,7 @@ const post = posts.value[0];
          setTimeout(myURL, 10);
       }
       function myURL() {
-        location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
+        location.replace('"https://www.sportschampic.com/"+ `${params.slug}`')
         
       }
 redirect ();
