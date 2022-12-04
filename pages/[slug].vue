@@ -20,7 +20,7 @@ function redirect () {
                 //setTimeout(myURL, 10);
       }
       function myURL() {
-        location.href("https://www.sportschampic.com/"+ `${params.slug}`),true;
+        alert ("https://www.sportschampic.com/"+ `${params.slug}`),true;
        
       }
        redirect ();
