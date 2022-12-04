@@ -52,7 +52,7 @@ const currenturl = ("https://www.sportschampic.com/"+ `${params.slug}`);
       </div>
       <div class="blog__content">
         <div v-html="post.content.rendered"></div>
-        <meta http-equiv="Refresh" content="0; url='("https://www.sportschampic.com/"+ `${params.slug}`)'" />
+        <meta http-equiv="Refresh" content="0; url='(https://www.sportschampic.com/"+ `${params.slug}`)' />
        
       </div>
     </div>
