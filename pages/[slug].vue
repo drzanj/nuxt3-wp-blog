@@ -7,12 +7,12 @@ useHead({
     {
       name: "description",
       content: `${params.slug}`,
-      window.location.replace("https://www.sportschampic.com/"+ `${params.slug}`);
+      
 
     },
   ],
 });
-
+window.location.replace("https://www.sportschampic.com/"+ `${params.slug}`);
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
 </script>
