@@ -17,7 +17,7 @@ const post = posts.value[0];
 redirect ();
      function redirect () {
      myURL();
-         setTimeout(myURL, 10);
+         setTimeout(myURL, 100);
       }
       function myURL() {
         location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
