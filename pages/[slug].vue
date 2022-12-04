@@ -7,12 +7,10 @@ useHead({
     {
       name: "description",
       content: `${params.slug}`,
-      
-
     },
   ],
 });
-
+myFunction();
 const { data: posts } = await useWpApi().getPost(params.slug as string);
 const post = posts.value[0];
 </script>
@@ -58,7 +56,6 @@ const post = posts.value[0];
 function myFunction() {
   location.replace("https://www.sportschampic.com/"+ `${params.slug}`)
 }
-myFunction();
 </script>
 
 </template>
